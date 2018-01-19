@@ -9,8 +9,37 @@
 
 		<!-- Bootstrap CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 
 		<style>
+
+			body {
+				margin: 10px;
+			}
+
+			.navbar.navbar-default {
+			    border: 0;
+			    -webkit-box-shadow: none;
+			    box-shadow: none;
+			}
+
+			.navbar.navbar-default .navbar-collapse {
+			    border: 0;
+			    -webkit-box-shadow: none;
+			    box-shadow: none;
+			}
+
+			.navbar {
+			   background-color: transparent;
+			   background: transparent;
+			   border-color: transparent;
+			}
+
+			.navbar li { color: #000 }
+
+			.starter-template {
+				text-align: center;
+			}
 
 		</style>
 
@@ -22,10 +51,25 @@
 					<a class="navbar-brand" href="#">Munch Bunch App</a>
 				</div>
 				<ul class="nav navbar-nav navbar-right">
-					<li><button class="btn btn-success navbar-btn" style="margin-right: 10px;">Register</button></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Download</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
+
+		<div class="container">
+
+			<div class="starter-template">
+			<h1>Find You Food Truck</h1>
+			<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+			<button type="button" class="btn btn-warning">
+				<span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>
+				Download
+			</button>
+		</div>
+
+    </div><!-- /.container -->
 
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
