@@ -4,8 +4,13 @@
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
 
 		<title>Munch Bunch App</title>
+
 
 		<!-- Bootstrap CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -13,10 +18,9 @@
 
 		<style>
 
-		/*kevin is a buttface again*/
-
 			body {
 				margin: 10px;
+				background-size: cover;
 			}
 
 			.navbar.navbar-default {
@@ -31,53 +35,90 @@
 			    box-shadow: none;
 			}
 
+			.navbar-lock {
+				position: fixed; /* Set the navbar to fixed position */
+				width: 95%; /* Full width */
+    			overflow: hidden;
+			}
+
 			.navbar {
 			   background-color: transparent;
 			   background: transparent;
 			   border-color: transparent;
 			}
 
-			.navbar li { color: #000 }
+			.navbar li { 
+				color: #000 
+				text-shadow: 1px 1px white;
+
+			}
 
 			.starter-template {
 				text-align: center;
+				color: white;
+				font-family: ;
 			}
 
 			#phone {
 				margin: 0 auto;
 			}
 
+			.w3-lobster {
+    			font-family: "Lobster", serif;
+    			text-shadow: 1px 1px black;
+			}
+
+
 		</style>
 
+
 	</head>
-	<body>
+	<body background="images/food.jpg">
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Munch Bunch App</a>
-				</div>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Download</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
+				<nav class="navbar-lock">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">Munch Bunch App</a>
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#About">About</a></li>
+						<li><a href="#Download">Download</a></li>
+						<li><a href="#Contact">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
 		</nav>
 
 		<div class="container">
 
 			<div class="starter-template">
-				<h1>Find You Food Truck</h1>
-				<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-
+				 <div class="w3-container w3-lobster">
+					<p class="w3-xxxlarge"> It's time for Munchin</p>
+				</div>
+				
 				<div id="phone">
 					<img src="images/iphone-mockup.png" alt="iphone mockup" style="width:650px;">
 				</div>
 
+
+				<section>
+				<h2 id="About">About</h2>
+				<p>Bacon ipsum dolor amet salami short ribs chuck kevin, picanha hamburger bresaola pork ham hock leberkas turkey. Chuck fatback jerky biltong pork shankle hamburger. Pastrami filet mignon burgdoggen bresaola. Pork belly cow pork chop, porchetta beef ribs swine picanha kielbasa drumstick shankle salami ball tip spare ribs brisket prosciutto. Landjaeger turkey chicken, ball tip sausage pig strip steak chuck cupim ham tri-tip short ribs pork beef.
+				Porchetta pork belly sirloin beef, kielbasa pancetta sausage pork loin filet mignon flank capicola swine. Rump pastrami shoulder, turducken chicken pig tenderloin chuck bresaola. Pastrami strip steak short ribs hamburger ham hock pancetta chicken sirloin landjaeger turducken cupim. Bacon meatball chuck, meatloaf leberkas jerky pork belly turducken burgdoggen brisket. T-bone pork chop landjaeger, pork loin bacon strip steak shankle doner sausage porchetta pastrami tail kielbasa shoulder turkey. Brisket rump tail, burgdoggen andouille tenderloin spare ribs ribeye meatball tongue beef ribs. Capicola turducken ribeye landjaeger kielbasa prosciutto tongue beef.
+				</p>
+				</section>
+
+				<h2 id="Download">Download</h2>
 				<button type="button" class="btn btn-warning">
 					<span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>
 					Download
 				</button>
+
+				<h2 id="Contact">Contact</h2>
+
+
+
+
 			</div>
 
 	    </div><!-- /.container -->
